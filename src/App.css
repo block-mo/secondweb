@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .header {
+  background-color: aquamarine;
+  font-size: large;
+} */
+ 
+.menu {
+  width: 80%;
+  text-align: left;
+  position: fixed;
+  transition: 0.5s;
+  left: -100%;
+  list-style: none;
+  height: 100vh;
+  background-color: yellowgreen;
+}
+.activeMenu {
+  left: 0%;
+}
+.menu ul li{
+  list-style: none;
+  padding: 10px 0px;
+}
+.micon {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  right: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modalOverLay {
+  width: 100%;
+  position: fixed;
+  display: none;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modalShow {
+  display: block;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.modalDiv {
+  width: 320px;
+  position: fixed;
+  height: 320px;
+  left: 50%;
+  transition: 0.3s;
+  top: -500px;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
 }
-
-.App-link {
-  color: #61dafb;
+.showModalDiv {
+  top: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.en {
+  position: fixed;
+  background-color: #94a3b8;
+  padding: 4px;
+  right: -30px;
+  rotate: 90deg;
+  top: 400px;
 }
