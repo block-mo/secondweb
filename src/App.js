@@ -4,6 +4,7 @@ import Header from './Header';
 import { useState } from 'react';
 import btnModule from './Button.module.css'
 import FruitComponent from './Fruits';
+import LanguageComponent from './Language';
 
 function App() {
 
@@ -81,6 +82,7 @@ function App() {
 
       <br/>
       <FruitComponent/>
+      <LanguageComponent/>
       {template}
       <h1 className='text-[50px] bg-red-500 mt-4'>This is first build with tailwindcss</h1>
       <p className='bg-blue-300 font-sans text-[30px]'>React components receive data and return what should appear on the screen. You can pass them new data in response to an interaction, like when the user types into an input. React will then update the screen to match the new data.</p>
